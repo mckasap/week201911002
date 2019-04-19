@@ -32,6 +32,13 @@
 
    </receiver>
 
+        <receiver android:name=".BHYT">
+
+            <intent-filter>
+                <action android:name="com.bize.her.yer.TRABZON"></action>
+            </intent-filter>
+
+        </receiver>
     </application>
 
 </manifest>
