@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,4 +26,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public void Send(View v){
+        Intent in= new Intent();
+        in.putExtra("mac","YENİ MALATYA SPOR");
+        in.setAction("com.bize.her.yer.TRABZON");
+        sendBroadcast(in);
+
+
+    }
+
+
 }
