@@ -23,7 +23,14 @@
 
             </intent-filter>
         </receiver>
+   <receiver android:name=".MySecondReceiver">
+       <intent-filter>
+           <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"></action>
+           <action android:name="android.intent.action.ACTION_POWER_CONNECTED"></action>
 
+       </intent-filter>
+
+   </receiver>
 
     </application>
 

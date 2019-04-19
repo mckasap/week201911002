@@ -14,5 +14,15 @@ public class MainActivity extends AppCompatActivity {
         IntentFilter ifilter = new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED);
         Intent batteryStatus = this.registerReceiver( new myReceiver(), ifilter);
 
+
+        IntentFilter iflt1= new IntentFilter(Intent.ACTION_POWER_CONNECTED);
+        Intent pw1 = this.registerReceiver( new MySecondReceiver(), iflt1);
+        IntentFilter iflt2= new IntentFilter(Intent.ACTION_POWER_DISCONNECTED);
+        Intent pw2 = this.registerReceiver( new MySecondReceiver(), iflt2);
+
+
+
+
+
     }
 }
