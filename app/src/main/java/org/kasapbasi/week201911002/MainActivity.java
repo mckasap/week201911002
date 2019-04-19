@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Intent pw2 = this.registerReceiver( new MySecondReceiver(), iflt2);
 
 
-   // IntentFilter ifTS= new IntentFilter("com.bize.her.yer.TRABZON");
-   // Intent pw3= this.registerReceiver( new BHYT(),ifTS);
+ IntentFilter ifTS= new IntentFilter("com.bize.her.yer.TRABZON");
+ Intent pw3= this.registerReceiver( new BHYT(),ifTS);
 
 
     }
