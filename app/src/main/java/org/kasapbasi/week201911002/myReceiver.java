@@ -24,7 +24,7 @@ public class myReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        Toast.makeText( null," MESAJ GELDİ ",Toast.LENGTH_LONG).show();
+        Toast.makeText(context," AİRPLANE MESAJ GELDİ ",Toast.LENGTH_LONG).show();
 
     }
 }
